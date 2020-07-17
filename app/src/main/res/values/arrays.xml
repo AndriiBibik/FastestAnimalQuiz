@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="answers_images_1">
+        <item>@drawable/golden_eagle</item>
+        <item>@drawable/eurasian_hobby</item>
+        <item>@drawable/peregrine_falcon</item>
+        <item>@drawable/adelie_penguin</item>
+    </array>
+    <array name="answers_images_2">
+        <item>@drawable/cheetah</item>
+        <item>@drawable/pronghorn</item>
+        <item>@drawable/mexican_free_tailed_bat</item>
+        <item>@drawable/zebra</item>
+    </array>
+    <array name="answers_images_3">
+        <item>@drawable/blue_shark</item>
+        <item>@drawable/sail_fish</item>
+        <item>@drawable/striped_marlin</item>
+        <item>@drawable/black_marlin</item>
+    </array>
+    <array name="answers_images_4">
+        <item>@drawable/horse_fly</item>
+        <item>@drawable/black_cutworm</item>
+        <item>@drawable/green_dragonfly</item>
+        <item>@drawable/dear_botfly</item>
+        <item>@drawable/wasp</item>
+    </array>
+    <array name="answers_images_5">
+        <item>@drawable/horse_fly</item>
+        <item>@drawable/pronghorn</item>
+        <item>@drawable/golden_eagle</item>
+        <item>@drawable/black_marlin</item>
+        <item>@drawable/no_animal</item>
+    </array>
+    <array name="answers_images_6">
+        <item>@drawable/cheetah</item>
+        <item>@drawable/adelie_penguin</item>
+        <item>@drawable/zebra</item>
+        <item>@drawable/elephant</item>
+    </array>
+    <array name="answers_images_7">
+        <item>@drawable/hare</item>
+        <item>@drawable/fox</item>
+    </array>
+    <array name="answers_images_8">
+        <item>@drawable/cheetah</item>
+        <item>@drawable/cheetah</item>
+        <item>@drawable/cheetah</item>
+        <item>@drawable/cheetah</item>
+    </array>
+    <array name="answers_images_9">
+        <item>@drawable/ostrich</item>
+        <item>@drawable/adelie_penguin</item>
+        <item>@drawable/sail_fish</item>
+        <item>@drawable/hippopotamus</item>
+    </array>
+    <array name="answers_images_10">
+        <item>@drawable/peregrine_falcon</item>
+        <item>@drawable/peregrine_falcon</item>
+        <item>@drawable/peregrine_falcon</item>
+        <item>@drawable/peregrine_falcon</item>
+    </array>
+    <array name="answers_images_11">
+        <item>@drawable/elephant</item>
+        <item>@drawable/brown_bear</item>
+        <item>@drawable/fox</item>
+        <item>@drawable/giraffe</item>
+    </array>
+    <array name="answers_images_12">
+        <item>@drawable/peregrine_falcon</item>
+        <item>@drawable/cheetah</item>
+        <item>@drawable/ostrich</item>
+        <item>@drawable/black_marlin</item>
+    </array>
+    <array name="answers_images_13">
+        <item>@drawable/elephant</item>
+        <item>@drawable/elephant</item>
+        <item>@drawable/elephant</item>
+        <item>@drawable/elephant</item>
+    </array>
+    <array name="answers_images_14">
+        <item>@drawable/brown_bear</item>
+        <item>@drawable/brown_bear</item>
+        <item>@drawable/brown_bear</item>
+        <item>@drawable/brown_bear</item>
+    </array>
+
+    <!--right answers-->
+    <array name="right_answers_1">
+        <item>2</item>
+    </array>
+    <array name="right_answers_2">
+        <item>2</item>
+    </array>
+    <array name="right_answers_3">
+        <item>3</item>
+    </array>
+    <array name="right_answers_4">
+        <item>0</item>
+    </array>
+    <array name="right_answers_5">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="right_answers_6">
+        <item>1</item>
+    </array>
+    <array name="right_answers_7">
+        <item>0</item>
+    </array>
+    <array name="right_answers_8">
+        <item>2</item>
+    </array>
+    <array name="right_answers_9">
+        <item>0</item>
+    </array>
+    <array name="right_answers_10">
+        <item>3</item>
+    </array>
+    <array name="right_answers_11">
+        <item>3</item>
+    </array>
+    <array name="right_answers_12">
+        <item>0</item>
+    </array>
+    <array name="right_answers_13">
+        <item>0</item>
+    </array>
+    <array name="right_answers_14">
+        <item>0</item>
+    </array>
+</resources>

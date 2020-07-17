@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky_gradient_light"
+    tools:context=".StartQuizActivity">
+
+    <ImageView
+        android:layout_width="@dimen/sun_size"
+        android:layout_height="@dimen/sun_size"
+        app:srcCompat="@drawable/ic_sun" />
+
+    <ImageView
+        android:id="@+id/start_quiz_cloud"
+        android:layout_width="@dimen/cloud_size"
+        android:layout_height="@dimen/cloud_size"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/cloud_to_button_margin"
+        app:srcCompat="@drawable/ic_cloud_with_question_marks" />
+    <LinearLayout
+        android:id="@+id/start_quiz_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_quiz_cloud"
+        android:background="@drawable/light_button_background"
+        android:elevation="@dimen/button_elevation"
+        android:clickable="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/light_button_text_size"
+            android:text="@string/start_quiz_button_text"
+            android:padding="@dimen/start_button_padding"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/falcon_image_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/falcon_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/falcon_png"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="@dimen/cheetah_image_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cheetah_png"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

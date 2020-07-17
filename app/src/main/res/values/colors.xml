@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--for sky gradient-->
+    <color name="sky_darker">#35D6ED</color>
+    <color name="sky_lighter">#7AE5F5</color>
+    <color name="sky_darker_light">#A0FFFF</color>
+    <color name="sky_lighter_light">#D8FFFF</color>
+
+    <!--light button-->
+    <color name="light_button_pressed">#E0E0E0</color>
+
+    <!--answer card background-->
+    <color name="answer_card_background">#80DAEB</color>
+</resources>

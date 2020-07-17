@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">FastestAnimalQuiz</string>
+    <string name="start_quiz_button_text">start quiz</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="questions">
+        <!--1-->
+        <item>What is the fastest bird?</item>
+        <!--2-->
+        <item>What is the fastest mammal?</item>
+        <!--3-->
+        <item>What is the fastest fish?</item>
+        <!--4-->
+        <item>What is the fastest insect?</item>
+        <!--5-->
+        <item>Which animal can break 100 km/h barrier</item>
+        <!--6-->
+        <item>Which one is a faster swimmer?</item>
+        <!--7-->
+        <item>Who is faster?</item>
+        <!--8-->
+        <item>How fast can a cheetah run?</item>
+        <!--9-->
+        <item>Who can run faster?</item>
+        <!--10-->
+        <item>What speed can be achieved by peregrine falcon during free fall?</item>
+        <!--11-->
+        <item>Who has higher speed recorded?</item>
+        <!--12-->
+        <item>Which animal is the fastest in the world?</item>
+        <!--13-->
+        <item>What is the elephant\'s top speed?</item>
+        <!--14-->
+        <item>What is the brown bear top speed?</item>
+    </string-array>
+
+    <string-array name="answers_1">
+        <item>Golden eagle</item>
+        <item>Eurasian hobby</item>
+        <item>Peregrin falcon</item>
+        <item>Adelie penguin</item>
+    </string-array>
+    <string-array name="answers_2">
+        <item>Cheetah</item>
+        <item>Pronghorn</item>
+        <item>Mexican free tailed bat</item>
+        <item>Zebra</item>
+    </string-array>
+    <string-array name="answers_3">
+        <item>Blue shark</item>
+        <item>Sailfish</item>
+        <item>Striped marlin</item>
+        <item>Black marlin</item>
+    </string-array>
+    <string-array name="answers_4">
+        <item>Male horse-fly</item>
+        <item>Black cutworm</item>
+        <item>Green darner dragonfly</item>
+        <item>Deer botfly</item>
+        <item>Wasp</item>
+    </string-array>
+    <string-array name="answers_5">
+        <item>Male horse-fly</item>
+        <item>Pronghorn</item>
+        <item>Golden eagle</item>
+        <item>Black marlin</item>
+        <item>None of them</item>
+    </string-array>
+    <string-array name="answers_6">
+        <item>Cheetah</item>
+        <item>Adelie penguin</item>
+        <item>Zebra</item>
+        <item>Elephant</item>
+    </string-array>
+    <string-array name="answers_7">
+        <item>Hare</item>
+        <item>Red fox</item>
+    </string-array>
+    <string-array name="answers_8">
+        <item>150 km/h</item>
+        <item>60 km/h</item>
+        <item>120 km/h</item>
+        <item>180 km/h</item>
+    </string-array>
+    <string-array name="answers_9">
+        <item>Ostrich</item>
+        <item>Adelie penguin</item>
+        <item>Sailfish</item>
+        <item>Hippopotamus</item>
+    </string-array>
+    <string-array name="answers_10">
+        <item>210 km/h</item>
+        <item>60 km/h</item>
+        <item>120 km/h</item>
+        <item>390 km/h</item>
+    </string-array>
+    <string-array name="answers_11">
+        <item>Elephant</item>
+        <item>Brown bear</item>
+        <item>Red fox</item>
+        <item>Giraffe</item>
+    </string-array>
+    <string-array name="answers_12">
+        <item>Peregrin falcon</item>
+        <item>Cheetah</item>
+        <item>Ostrich</item>
+        <item>Black marlin</item>
+    </string-array>
+    <string-array name="answers_13">
+        <item>40 km/h</item>
+        <item>60 km/h</item>
+        <item>20 km/h</item>
+        <item>50 km/h</item>
+    </string-array>
+    <string-array name="answers_14">
+        <item>35 km/h</item>
+        <item>15 km/h</item>
+        <item>60 km/h</item>
+        <item>100 km/h</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
