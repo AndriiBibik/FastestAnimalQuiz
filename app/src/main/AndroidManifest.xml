@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fastest.animal.quiz">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".WebActivity"
+            android:theme="@style/ActivityWebTheme"
+            android:parentActivityName=".QuizActivity"/>
+        <activity
             android:name=".QuizActivity"
             android:label="@string/title_activity_quiz"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".StartQuizActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

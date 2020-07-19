@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/results_circle"
+                android:layout_width="@dimen/results_circle_size"
+                android:layout_height="@dimen/results_circle_size" />
+
+            <TextView
+                android:id="@+id/results_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/results_text_size" />
+        </FrameLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/results_buttons_container_padding"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+            <LinearLayout
+                android:id="@+id/button_again"
+                style="@style/light_button_style"
+                android:layout_margin="@dimen/results_buttons_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/light_button_text_style"
+                    android:text="@string/again_button_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_read_more"
+                style="@style/dark_button_style"
+                android:layout_margin="@dimen/results_buttons_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/dark_button_text_style"
+                    android:text="@string/read_more_button_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_leave_review"
+                style="@style/dark_button_style"
+                android:layout_margin="@dimen/results_buttons_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/dark_button_text_style"
+                    android:text="@string/leave_review_button_text" />
+            </LinearLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <LinearLayout
+            android:id="@+id/explanations_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+        <TextView
+            android:id="@+id/special_thanks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/special_thanks_top_margin"
+            android:textSize="@dimen/special_thanks_text_size"/>
+    </LinearLayout>
+</ScrollView>

@@ -12,7 +12,26 @@
 
     <!--light button-->
     <color name="light_button_pressed">#E0E0E0</color>
+    <!--Dark button-->
+    <color name="dark_button_normal">#651FFF</color>
+    <color name="dark_button_pressed">#1C00A4</color>
 
     <!--answer card background-->
     <color name="answer_card_background">#80DAEB</color>
+    
+    <!--right wrong colors-->
+    <color name="results_1">#f12727</color>
+    <color name="results_2">#f16121</color>
+    <color name="results_3">#f1871d</color>
+    <color name="results_4">#1278c4</color>
+    <color name="results_5">#00a8c4</color>
+    <color name="results_6">#8bba25</color>
+    <color name="results_7">#008e5b</color>
+
+    <!--right wrong indicators-->
+    <color name="right_background">#BF00BF00</color>
+    <color name="wrong_background">#f41600</color>
+
+    <!--no internet message toast-->
+    <color name="no_internet_background">@color/results_5</color>
 </resources>

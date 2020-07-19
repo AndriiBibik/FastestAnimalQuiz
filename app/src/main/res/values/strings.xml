@@ -8,8 +8,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="next_question_button_text">next</string>
 
     <string-array name="questions">
         <!--1-->
@@ -23,7 +22,7 @@
         <!--5-->
         <item>Which animal can break 100 km/h barrier</item>
         <!--6-->
-        <item>Which one is a faster swimmer?</item>
+        <item>Which one is a better swimmer?</item>
         <!--7-->
         <item>Who is faster?</item>
         <!--8-->
@@ -40,6 +39,38 @@
         <item>What is the elephant\'s top speed?</item>
         <!--14-->
         <item>What is the brown bear top speed?</item>
+    </string-array>
+
+    <!--answers-explanations-->
+    <string-array name="explanations">
+        <!--1-->
+        <item>The peregrine falcon is the fastest aerial animal, fastest animal in flight, fastest bird, and the overall fastest member of the animal kingdom. The peregrine achieves its highest velocity not in horizontal level flight, but during its characteristic hunting stoop.</item>
+        <!--2-->
+        <item>Fastest mammal is mexican free-tailed bat (160 km/h). Cheetah holds second place at this category. Interesting fact...</item>
+        <!--3-->
+        <item>It is black marlin. That incredible fish can reach incredible speed at the water. Up to 132 km/h.</item>
+        <!--4-->
+        <item>Male horse-fly! Did you know that highest speed recorded for this insect is 145 km/h? That\'s incredible!</item>
+        <!--5-->
+        <item>Right answers are: male horse-fly (145 km/h), golden eagle (240–320 km/h) and black marlin (132 km/h).</item>
+        <!--6-->
+        <item>Better swimmer is adelie penguin. Those quties can reach speed of up to 15 km/h when hunting in the water.</item>
+        <!--7-->
+        <item>The right answer is hare. Hares can reach maximum speed of 56 km/h in short distances of approximately 90 meters, and a top speed of 80 km/h for about 20 meters. Foxes can reach speed up to 50 km/h.</item>
+        <!--8-->
+        <item>Cheetahs can run as fast as 120 km/h.</item>
+        <!--9-->
+        <item>Fastest runner here is ostrich. This running freak can run with the speed up to 70 km/h.</item>
+        <!--10-->
+        <item>While stooping, the peregrine falcon soars to a great height, then dives steeply at speeds up to 390 km/h.</item>
+        <!--11-->
+        <item>Did you know that giraffe can run as fast as 60 km/h?</item>
+        <!--12-->
+        <item>The king of speed in animals kingdom is peregring falcon, with incredible 390 km/h during its hunting stoop.</item>
+        <!--13-->
+        <item>African bush elephant can reach speed up to 40 km/h! Not that slow, huh?</item>
+        <!--14-->
+        <item>Brown bear\'s highest speed recorded is 35 km/h.</item>
     </string-array>
 
     <string-array name="answers_1">
@@ -127,6 +158,21 @@
         <item>100 km/h</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--results fragment-->
+    <string name="again_button_text">again</string>
+    <string name="read_more_button_text">reed more</string>
+    <string name="leave_review_button_text">leave review</string>
+
+    <!--internet problem message-->
+    <string name="internet_problem_message">🐰 Sorry, can\'t run this option without internet.</string>
+
+    <!--web activity-->
+    <string name="read_more_title">Fastest animals</string>
+    <string name="leave_a_review_title">Leave a review</string>
+    <string name="wikipedia_title">Wikipedia.org</string>
+    <string name="read_more_wiki_page">https://en.wikipedia.org/wiki/Fastest_animals</string>
+    <string name="leave_a_review_page_without_package">http://play.google.com/store/apps/details?id=</string>
+    <string name="wikipedia_page">https://wikipedia.org</string>
+    <!--special thanks in results fragment-->
+    <string name="special_thanks_text">❤ Special thanks to Wikipedia.org for its content.</string>
 </resources>

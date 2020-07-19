@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
     app:cardCornerRadius="@dimen/answer_card_corners"
     app:cardElevation="@dimen/answer_card_elevation"
     app:cardBackgroundColor="@color/answer_card_background"

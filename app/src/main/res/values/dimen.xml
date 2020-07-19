@@ -8,7 +8,9 @@
     <dimen name="light_button_corners">8dp</dimen>
     <dimen name="light_button_text_size">24sp</dimen>
     <dimen name="start_button_padding">12dp</dimen>
-    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_elevation">4dp</dimen>
+    <!--in landscape-->
+    <dimen name="start_button_land_margin">24dp</dimen>
 
     <!--cheetah image-->
     <dimen name="cheetah_image_width">300dp</dimen>
@@ -20,16 +22,50 @@
     <dimen name="answer_card_corners">24dp</dimen>
     <dimen name="answer_card_elevation">4dp</dimen>
     <dimen name="checkbox_size">24dp</dimen>
-    <dimen name="answer_horizontal_padding">24dp</dimen>
+    <dimen name="answer_horizontal_padding">16dp</dimen>
     <dimen name="checkbox_margin_right">16dp</dimen>
     <dimen name="answer_image_size">80dp</dimen>
     <dimen name="answer_image_vertical_margin">8dp</dimen>
     <dimen name="answer_image_right_margin">24dp</dimen>
     <dimen name="answer_text_size">20sp</dimen>
     <dimen name="answer_margin">12dp</dimen>
+    <dimen name="cards_horizontal_margin_landscape">8dp</dimen>
 
     <!--quiz activity-->
-    <dimen name="question_text_top_margin">24dp</dimen>
-    <dimen name="question_text_bottom_margin">32dp</dimen>
-    <dimen name="question_text_size">40sp</dimen>
+    <dimen name="question_text_bottom_margin">12dp</dimen>
+    <dimen name="question_text_size">32sp</dimen>
+    <dimen name="next_button_top_margin">4dp</dimen>
+    <dimen name="next_button_left_margin">16dp</dimen>
+    <dimen name="fragment_padding_horizontal">16dp</dimen>
+    <dimen name="fragment_padding_bottom">16dp</dimen>
+    <!--flexbox of indicators-->
+    <dimen name="indicative_flexbox_padding">8dp</dimen>
+    <!--indicator-->
+    <dimen name="indicator_size">16dp</dimen>
+    <dimen name="indicator_margin">8dp</dimen>
+
+    <!--results-->
+    <dimen name="results_circle_size">104dp</dimen>
+    <dimen name="results_text_size">32dp</dimen>
+    <dimen name="results_buttons_container_padding">8dp</dimen>
+    <dimen name="results_buttons_margin">8dp</dimen>
+    <dimen name="question_explanation_text">24sp</dimen>
+    <dimen name="explanation_text_size">20sp</dimen>
+    <dimen name="question_explanation_text_left_margin">16dp</dimen>
+    <dimen name="right_wrong_indicator_size">24dp</dimen>
+    <dimen name="right_wrong_indicator_margin_right">12dp</dimen>
+    <dimen name="explanation_margin_bottom">8dp</dimen>
+    <dimen name="explanation_question_bottom_margin">8dp</dimen>
+    <dimen name="special_thanks_text_size">16sp</dimen>
+    <dimen name="special_thanks_top_margin">16dp</dimen>
+
+    <!--internet problem message-->
+    <dimen name="internet_message_problem_padding">16dp</dimen>
+    <dimen name="internet_message_problem_text">20sp</dimen>
+    <dimen name="no_internet_background_radius">16dp</dimen>
+    <dimen name="no_internet_message_elevation">4dp</dimen>
+    <dimen name="no_internet_top_offset">32dp</dimen>
+
+    <!--web activity-->
+    <dimen name="progress_bar_size">40dp</dimen>
 </resources>

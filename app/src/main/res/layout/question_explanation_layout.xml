@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/explanation_margin_bottom">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/question_explanation_text"
+        android:layout_marginBottom="@dimen/explanation_question_bottom_margin"
+        android:fontFamily="@font/pacifico"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/right_wrong_indicator"
+            android:layout_width="@dimen/right_wrong_indicator_size"
+            android:layout_height="@dimen/right_wrong_indicator_size"
+            android:layout_marginRight="@dimen/right_wrong_indicator_margin_right"
+            app:srcCompat="@drawable/ic_right_colored"/>
+        <TextView
+            android:id="@+id/question_explanation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/explanation_text_size"/>
+    </LinearLayout>
+</LinearLayout>

@@ -11,8 +11,12 @@ public class Question {
     // right answers ids
     private int[] rightAnswersIds;
 
-    public Question(String questionText, Answer[] answers, int[] rightAnswersIds) {
+    // explanations
+    private String explanationText;
+
+    public Question(String questionText, String explanationText, Answer[] answers, int[] rightAnswersIds) {
         this.questionText = questionText;
+        this.explanationText = explanationText;
         this.answers = answers;
         this.rightAnswersIds = rightAnswersIds;
     }
@@ -21,6 +25,7 @@ public class Question {
     public String getQuestionText() {
         return questionText;
     }
+    public String getExplanationText() { return explanationText; }
     public Answer[] getAnswers() {
         return answers;
     }

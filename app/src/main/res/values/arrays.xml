@@ -130,4 +130,15 @@
     <array name="right_answers_14">
         <item>0</item>
     </array>
+
+    <!--colors to show good or bad results-->
+    <array name="bad_good_colors">
+        <item>@color/results_1</item>
+        <item>@color/results_2</item>
+        <item>@color/results_3</item>
+        <item>@color/results_4</item>
+        <item>@color/results_5</item>
+        <item>@color/results_6</item>
+        <item>@color/results_7</item>
+    </array>
 </resources>
