@@ -21,6 +21,18 @@
         android:fontFamily="@font/pacifico"
         android:textSize="@dimen/question_text_size" />
 
+    <LinearLayout
+        android:id="@+id/next_question_button"
+        style="@style/dark_button_style"
+        android:layout_marginLeft="@dimen/done_button_left_margin"
+        android:layout_marginBottom="@dimen/done_button_bottom_margin"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/dark_button_text_style"
+            android:text="@string/done_question_button_text" />
+    </LinearLayout>
+
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/answers_container"
         android:layout_width="wrap_content"
@@ -29,16 +41,4 @@
         android:clipToPadding="false"
         app:flexDirection="column"
         android:padding="4dp" />
-
-    <LinearLayout
-        android:id="@+id/next_question_button"
-        style="@style/dark_button_style"
-        android:layout_marginLeft="@dimen/next_button_left_margin"
-        android:layout_marginTop="@dimen/next_button_top_margin"
-        android:visibility="gone">
-
-        <TextView
-            style="@style/dark_button_text_style"
-            android:text="@string/next_question_button_text" />
-    </LinearLayout>
 </LinearLayout>

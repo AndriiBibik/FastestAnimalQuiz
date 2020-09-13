@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FastestAnimalQuiz</string>
+    <string name="app_name">Fastest Animal Quiz</string>
     <string name="start_quiz_button_text">start quiz</string>
     <string name="title_activity_quiz">QuizActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -8,7 +8,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="next_question_button_text">next</string>
+    <string name="done_question_button_text">done!</string>
 
     <string-array name="questions">
         <!--1-->
@@ -175,4 +175,13 @@
     <string name="wikipedia_page">https://wikipedia.org</string>
     <!--special thanks in results fragment-->
     <string name="special_thanks_text">❤ Special thanks to Wikipedia.org for its content.</string>
+
+    <!--App id-->
+    <string name="APP_ID">ca-app-pub-7032884740736321~4054706251</string>
+    <!--before results interstitial ad unit-->
+    <string name="INTERSTITIAL_AD_UNIT_BEFORE_RESULTS">ca-app-pub-7032884740736321/5352310201</string>
+    <!--test devices-->
+    <string name="TEST_DEVICE_XIAOMI_MI_9_SE">7A3132B754939163F0CF4860337E206A</string>
+    <string name="TEST_DEVICE_LG_LEON">60E09331AF4542C9B8E6A807BE1D7E19</string>
+
 </resources>

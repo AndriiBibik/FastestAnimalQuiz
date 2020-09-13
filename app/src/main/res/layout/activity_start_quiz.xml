@@ -20,6 +20,13 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/cloud_to_button_margin"
         app:srcCompat="@drawable/ic_cloud_with_question_marks" />
+    <ImageView
+        android:layout_width="@dimen/cheetah_image_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cheetah_left_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cheetah_png"
+        android:layout_alignParentBottom="true"/>
     <LinearLayout
         android:id="@+id/start_quiz_button"
         android:layout_below="@+id/start_quiz_cloud"
@@ -38,12 +45,5 @@
         android:adjustViewBounds="true"
         android:src="@drawable/falcon_png"
         android:layout_alignParentRight="true"/>
-
-    <ImageView
-        android:layout_width="@dimen/cheetah_image_width"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/cheetah_png"
-        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

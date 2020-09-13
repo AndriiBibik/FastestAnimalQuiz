@@ -2,25 +2,28 @@ package fastest.animal.quiz;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.flexbox.FlexboxLayout;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.RequestConfiguration;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -44,12 +47,35 @@ public class QuizActivity extends AppCompatActivity {
     public static final String KEY_BUNDLE_SHUFFLED = "shuffled";
     public static final String KEY_BUNDLE_CURRENT_QUESTION = "question";
 
+    // interstitial ad
+    private InterstitialAd interstitialAd;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        // Make sure we use vector drawables. For lower APIs
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+
+        // initializing interstitial ad
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId(getString(R.string.INTERSTITIAL_AD_UNIT_BEFORE_RESULTS));
+        // adding test devices
+        RequestConfiguration requestConfiguration
+                = new RequestConfiguration.Builder()
+                .setTestDeviceIds(Arrays.asList(
+                        getString(R.string.TEST_DEVICE_XIAOMI_MI_9_SE),
+                        getString(R.string.TEST_DEVICE_LG_LEON),
+                        AdRequest.DEVICE_ID_EMULATOR
+                ))
+                .build();
+        MobileAds.setRequestConfiguration(requestConfiguration);
+        AdRequest request = new AdRequest.Builder()
+                .build();
+        interstitialAd.loadAd(request);
 
         // get questions with answers
         questions = getQuestions();
@@ -142,9 +168,15 @@ public class QuizActivity extends AppCompatActivity {
             fragmentTransaction.replace(R.id.question_fragment, fragment);
             fragmentTransaction.commit();
         } else {
+            // show interstitial
+            if (interstitialAd.isLoaded()) {
+                interstitialAd.show();
+            }
             Fragment fragment = new ResultsFragment(rightWrongAnswers, shuffled);
             fragmentTransaction.replace(R.id.question_fragment, fragment);
             fragmentTransaction.commit();
+
+
         }
     }
 
