@@ -2,8 +2,10 @@ package fastest.animal.quiz;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
@@ -19,11 +21,14 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.RequestConfiguration;
+
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -60,22 +65,7 @@ public class QuizActivity extends AppCompatActivity {
         // Make sure we use vector drawables. For lower APIs
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
-        // initializing interstitial ad
-        interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId(getString(R.string.INTERSTITIAL_AD_UNIT_BEFORE_RESULTS));
-        // adding test devices
-        RequestConfiguration requestConfiguration
-                = new RequestConfiguration.Builder()
-                .setTestDeviceIds(Arrays.asList(
-                        getString(R.string.TEST_DEVICE_XIAOMI_MI_9_SE),
-                        getString(R.string.TEST_DEVICE_LG_LEON),
-                        AdRequest.DEVICE_ID_EMULATOR
-                ))
-                .build();
-        MobileAds.setRequestConfiguration(requestConfiguration);
-        AdRequest request = new AdRequest.Builder()
-                .build();
-        interstitialAd.loadAd(request);
+        initializeAndLoadInterstitial();
 
         // get questions with answers
         questions = getQuestions();
@@ -98,6 +88,55 @@ public class QuizActivity extends AppCompatActivity {
         }
 
         inputIndicatorsIntoFlexbox();
+    }
+
+    private void initializeAndLoadInterstitial() {
+        MobileAds.initialize(this, initializationStatus ->
+                loadInterstitial());
+    }
+
+    private void loadInterstitial() {
+        //setting test devices
+        new AdsUtils(this).setRequestConfigurationForTestDevices();
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        Log.v(LOG_TAG, "interst. add initializing started");
+
+        InterstitialAd.load(this, getString(R.string.INTERSTITIAL_AD_UNIT_BEFORE_RESULTS), adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        // The mInterstitialAd reference will be null until an ad is loaded.
+                        QuizActivity.this.interstitialAd = interstitialAd;
+                        QuizActivity.this.interstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdClicked() {
+                            }
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                QuizActivity.this.interstitialAd = null;
+                            }
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(AdError adError) {
+                                QuizActivity.this.interstitialAd = null;
+                            }
+                            @Override
+                            public void onAdImpression() {
+                            }
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        // Handle the error
+                        QuizActivity.this.interstitialAd = null;
+                        Log.d(LOG_TAG, loadAdError.toString());
+                    }
+                });
     }
 
     // refreshing flexbox with indicators for each question
@@ -169,8 +208,10 @@ public class QuizActivity extends AppCompatActivity {
             fragmentTransaction.commit();
         } else {
             // show interstitial
-            if (interstitialAd.isLoaded()) {
-                interstitialAd.show();
+            if (interstitialAd != null) {
+                interstitialAd.show(QuizActivity.this);
+            } else {
+                Log.d("TAG", "The interstitial ad wasn't ready yet.");
             }
             Fragment fragment = new ResultsFragment(rightWrongAnswers, shuffled);
             fragmentTransaction.replace(R.id.question_fragment, fragment);

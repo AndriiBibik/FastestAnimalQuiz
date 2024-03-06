@@ -178,8 +178,11 @@
 
     <!--App id-->
     <string name="APP_ID">ca-app-pub-7032884740736321~4054706251</string>
+
     <!--before results interstitial ad unit-->
     <string name="INTERSTITIAL_AD_UNIT_BEFORE_RESULTS">ca-app-pub-7032884740736321/5352310201</string>
+    <string name="TEST_INTERSTITIAL_AD_UNIT_BEFORE_RESULTS">ca-app-pub-3940256099942544/1033173712</string>
+
     <!--test devices-->
     <string name="TEST_DEVICE_XIAOMI_MI_9_SE">7A3132B754939163F0CF4860337E206A</string>
     <string name="TEST_DEVICE_LG_LEON">60E09331AF4542C9B8E6A807BE1D7E19</string>

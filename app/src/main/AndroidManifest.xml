@@ -24,7 +24,9 @@
             android:name=".QuizActivity"
             android:label="@string/title_activity_quiz"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".StartQuizActivity">
+        <activity
+            android:name=".StartQuizActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
